@@ -1,6 +1,6 @@
 # Introduction
 
-
+## works
 $$
 \begin{aligned}
 a=1 
@@ -11,8 +11,19 @@ $$
 
 $$
 \begin{aligned}
+a=1 \label{TAG}
+\\
+b=2
+\end{aligned}
+$$
+
+
+## doesn't work
+$$
+\begin{aligned}
 a=1 \tag{TAG}
 \\
 b=2
 \end{aligned}
 $$
+

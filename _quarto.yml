@@ -19,12 +19,12 @@ format:
   pdf:
     documentclass: scrreprt
     include-in-header:
-      - text: |
+      text: |
           \PassOptionsToPackage{no-math}{fontspec}
           \usepackage[utf8]{inputenc}
           \usepackage{mathtools}
     include-before-body: 
-      - text: |
+      text: |
           window.MathJax = {
               loader: {
                   load: ['[tex]/tagformat']
