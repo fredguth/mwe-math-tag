@@ -20,17 +20,15 @@ format:
     documentclass: scrreprt
     include-in-header:
       text: |
-          \PassOptionsToPackage{no-math}{fontspec}
-          \usepackage[utf8]{inputenc}
           \usepackage{mathtools}
     include-before-body: 
       text: |
           window.MathJax = {
               loader: {
-                  load: ['[tex]/tagformat']
+                  load: ['[tex]/tagformat', '[tex]/mathtools', '[tex]/amssymb']
               },
               tex: {
-                  packages: {'[+]': ['tagformat']},
+                  packages: {'[+]': ['tagformat', 'mathtools', 'amssymb']},
                   tags: 'ams'
               }
           };

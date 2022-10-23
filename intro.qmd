@@ -17,13 +17,21 @@ b=2
 \end{aligned}
 $$
 
+$$
+\begin{align}
+    a=1 \tag{TAG}
+    \\
+    b=2
+\end{align}
+$$
 
 ## doesn't work
-$$
+
+<!-- $$
 \begin{aligned}
-a=1 \tag{TAG}
-\\
-b=2
+    a=1 \tag{TAG}
+    \\
+    b=2
 \end{aligned}
-$$
+$$ -->
 
