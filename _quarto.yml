@@ -1,0 +1,39 @@
+project:
+  type: book
+
+book:
+  title: "tmp"
+  author: "Jane Doe"
+  date: "10/20/2022"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    include-in-header:
+      - text: |
+          \PassOptionsToPackage{no-math}{fontspec}
+          \usepackage[utf8]{inputenc}
+          \usepackage{mathtools}
+    include-before-body: 
+      - text: |
+          window.MathJax = {
+              loader: {
+                  load: ['[tex]/tagformat']
+              },
+              tex: {
+                  packages: {'[+]': ['tagformat']},
+                  tags: 'ams'
+              }
+          };
+
+    keep-tex: true
+
