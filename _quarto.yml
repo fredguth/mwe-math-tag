@@ -18,20 +18,5 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-    include-in-header:
-      text: |
-          \usepackage{mathtools}
-    include-before-body: 
-      text: |
-          window.MathJax = {
-              loader: {
-                  load: ['[tex]/tagformat', '[tex]/mathtools', '[tex]/amssymb']
-              },
-              tex: {
-                  packages: {'[+]': ['tagformat', 'mathtools', 'amssymb']},
-                  tags: 'ams'
-              }
-          };
-
     keep-tex: true
 

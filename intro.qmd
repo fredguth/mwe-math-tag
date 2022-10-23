@@ -1,37 +1,20 @@
 # Introduction
 
 ## works
-$$
-\begin{aligned}
-a=1 
-\\
-b=2
-\end{aligned}
-$$
-
-$$
-\begin{aligned}
-a=1 \label{TAG}
-\\
-b=2
-\end{aligned}
-$$
-
-$$
 \begin{align}
     a=1 \tag{TAG}
     \\
     b=2
 \end{align}
+
+## does not work
+
+````qmd
 $$
-
-## doesn't work
-
-<!-- $$
 \begin{aligned}
     a=1 \tag{TAG}
     \\
     b=2
 \end{aligned}
-$$ -->
-
+$$
+```
